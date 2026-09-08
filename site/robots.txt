@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xwhiptail.github.io/babybrief-site/sitemap.xml
