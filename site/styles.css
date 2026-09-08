@@ -146,7 +146,7 @@ h3 { margin-bottom: 10px; font-size: 1.28rem; }
 .doodle.sun { left: 2%; top: 9%; color: #e9b14f; font-size: 4.2rem; transform: rotate(-12deg); }
 .doodle.heart { left: 3%; bottom: 16%; color: var(--pink); font-size: 3.9rem; transform: rotate(-18deg); }
 .doodle.star { right: 2%; bottom: 5%; color: var(--blue); font-size: 4rem; transform: rotate(13deg); }
-.doodle.line { right: 4%; top: 1%; color: var(--ink); font-size: 3.7rem; transform: rotate(55deg); }
+.doodle.line { right: 10%; top: 1%; color: var(--ink); font-size: 3.7rem; transform: rotate(55deg); }
 
 .section { padding: 88px 0; }
 .section.kickered { border-top: 1px solid var(--line); }
