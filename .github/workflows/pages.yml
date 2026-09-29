@@ -1,4 +1,4 @@
-name: Deploy BabyBrief marketing site
+name: Deploy Nuzzlebook marketing site
 
 on:
   push:

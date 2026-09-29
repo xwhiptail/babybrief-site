@@ -1,8 +1,10 @@
+@font-face { font-family: "Nuzzlebook Hand"; src: url("assets/NuzzlebookHand-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+
 :root {
-  --paper: #fbf6eb;
-  --paper-deep: #f2e9da;
-  --ink: #23312d;
-  --muted: #65716b;
+  --paper: #fff8ee;
+  --paper-deep: #f4e9d9;
+  --ink: #594438;
+  --muted: #746357;
   --blue: #2f6d9f;
   --blue-soft: #d9e9f5;
   --pink: #ad3e72;
@@ -130,6 +132,7 @@ h3 { margin-bottom: 10px; font-size: 1.28rem; }
 .hero-note::before { content: "✦"; color: var(--pink); }
 
 .hero-art { position: relative; padding: 24px 0 34px; }
+.cuddle-bear { position: absolute; left: -9%; top: 5%; width: 43%; z-index: 3; border-radius: 30%; transform: rotate(-8deg); box-shadow: 0 12px 30px #59443818; }
 .hero-phone {
   position: relative;
   margin: 0 6% 0 auto;
@@ -173,6 +176,7 @@ h3 { margin-bottom: 10px; font-size: 1.28rem; }
 .screens { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: start; }
 .screen-card { margin: 0; }
 .screen-card img {
+  height: auto;
   display: block;
   width: 100%;
   border: 1px solid rgba(35, 49, 45, 0.14);
@@ -213,7 +217,7 @@ h3 { margin-bottom: 10px; font-size: 1.28rem; }
 .policy h1 { margin-bottom: 14px; font-size: clamp(2.7rem, 6vw, 5rem); }
 .policy .updated { color: var(--muted); }
 .policy h2 { margin-top: 46px; font-size: 1.75rem; }
-.policy p, .policy li { color: #4f5b55; }
+.policy p, .policy li { color: var(--muted); }
 .policy ul { padding-left: 1.25rem; }
 .policy a { color: var(--blue); }
 
@@ -249,3 +253,15 @@ h3 { margin-bottom: 10px; font-size: 1.28rem; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
+
+
+/* Original Paint lettering is reserved for headings. */
+h1, h2, h3 { font-family: "Nuzzlebook Hand", ui-rounded, sans-serif; font-weight: 400; letter-spacing: 0; line-height: 1.18; }
+.hero h1 { font-size: clamp(2.3rem, 4.4vw, 3.5rem); }
+h3 { font-size: 1.6rem; }
+.brand .brand-wordmark { width: 148px; height: auto; border-radius: 0; box-shadow: none; }
+
+.helpers { max-width: 510px; }
+.helpers h3 { margin-top: 24px; }
+.helpers h3:first-child { margin-top: 0; }
+@media (max-width: 580px) { .cuddle-bear { left: 0; width: 38%; } }
